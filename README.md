@@ -13,7 +13,7 @@ Ce projet reproduit une partie du travail d'un analyste sécurité : repérer au
 
 ## Aperçu
 
-![Tableau de bord Streamlit](pictures/Capture d'écran 2026-06-25 172234.png)
+![Tableau de bord Streamlit](pictures/Capture_d_'_écran_2026-06-25_172234.png)
 
 ## Technologies
 
