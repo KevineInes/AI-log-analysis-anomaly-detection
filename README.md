@@ -1,53 +1,44 @@
---Description--
-This project implements an AI-based anomaly detection system applied to cybersecurity logs. It uses Isolation Forest, an unsupervised machine learning algorithm, to automatically detect abnormal behaviors such as brute force attacks and port scans. The goal is to simulate how a security analyst can identify activities without predefined rules.
+# Détection d'anomalies dans des logs de sécurité avec l'IA
 
-Ce projet implémente un système de détection d'anomalies basé sur l'IA appliqué à des logs de cybersécurité. Il utilise Isolation Forest, un algorithme de machine learning non supervisé, pour détecter automatiquement des comportements anormaux comme les attaques brute force ou les scans de ports.
+## Objectif
 
---Domains covered/Domaines abordés
-*Cybersecurity(log analysis, intrusion detection)
-*Machine Learning(anomaly dtection with Isolation Forest)
-*Data Processing(feature engineering with pandas)
-*Web development(interactive dashboard with Streamlit)
+Ce projet reproduit une partie du travail d'un analyste sécurité : repérer automatiquement des comportements anormaux dans des logs, comme des attaques par force brute ou des scans de ports, sans écrire de règles de détection à l'avance.
 
-*Cybersécurité(analyse de logs, détection d'intrusion)
-*Machine Learning(détection d'anomalies avec Isolation Forest)
-*Traitements de données( feature engineering avec pandas)
-*Développement web(dashboard avec streamlit)
+## Démarche
 
---Features/Fonctionnalités
-*Log data processing
-*Feature extraction(failed attempts, ratios, ports usage)
-*AI-based anomaly detection
-*Interactive visualization with Streamlit dashboard
+1. **Traitement des logs** avec pandas
+2. **Création de variables** : nombre de tentatives de connexion échouées, ratios d'échec, ports utilisés
+3. **Détection d'anomalies** avec Isolation Forest, un algorithme d'apprentissage non supervisé : il apprend le comportement normal et isole les activités atypiques, sans nécessiter de données étiquetées
+4. **Visualisation** des résultats dans un tableau de bord interactif Streamlit
 
-*Traitement des logs
-*création de variables(tentatives échouées, ratios, ports)
-*Détection d'anomalies via IA
-*Visualisation interactive avec Streamlit
+## Aperçu
 
---IsolationForest--
-The project uses Isolation Forest, an unsupervised learning algorithm which learns the normal behavior of network activity, identifies anomalies as isolated or unusual patterns and does not required labeled data
+![Tableau de bord Streamlit](pictures/....png)
 
-Le projet utilise Isolation Forest, un algorithme non supervisé qui apprend le comportement normal d'un réseau, détecte les anomalies comme des comportements atypiques et ne nécessite pas de données étiquetées.
+## Technologies
 
-****How to Run/Lancer le projet****
-git clone <your-repo>
-cd ai-log-anomaly-detection
+Python · pandas · scikit-learn · Streamlit
+
+## Lancer le projet
+
+```bash
+git clone https://github.com/KevineInes/AI-log-analysis-anomaly-detection.git
+cd AI-log-analysis-anomaly-detection
 pip install -r requirements.txt
 python -m streamlit run app/app.py
+```
 
---Améliorations possibles/Improvements
-Add visual charts for anomaly insights
-Improve model tuning and evaluation
-real-time log processing
-combined rule-based and ML approaches
+## Limites et pistes d'amélioration
 
-Ajouter des graphiques pour l'analyse
-Améliorer le tuning du modèle
-Traiter les logs en temps réel
-Combiner règles + machine learning
+- Améliorer le réglage et l'évaluation du modèle
+- Ajouter des graphiques d'analyse des anomalies détectées
+- Traiter les logs en temps réel
+- Combiner détection par règles et machine learning
 
-AUTHOR
-Kevine Ines NZENTI
+## English summary
 
-Thanks for reading!!!
+AI-based anomaly detection on security logs: feature engineering with pandas, unsupervised detection with Isolation Forest (brute force attempts, port scans), and an interactive Streamlit dashboard.
+
+## Auteure
+
+Kevine Ines Nzenti · [LinkedIn](https://www.linkedin.com/in/kevine-ines-nzenti/)
